@@ -1,0 +1,2 @@
+python .\extract_annotations.py --xml_path "out_sample/annotations.xml" --tensor_suffix "try"
+python .\extract_annotations.py --xml_path "annotations/annotations1.xml" --tensor_suffix 1 --img_folder "./data_unann_padded"

@@ -1,0 +1,22 @@
+model:
+  type: densenet121
+  pretrained: False
+  source_domain: False
+  activation: relu
+training:
+  test_ratio: 0.25
+  batch_size: 16
+  epochs: 2000
+optimizer:
+  type: Adam
+  learning_rate: 0.001
+augmentation:
+  hflip: True
+  rotation: False
+  noise: False
+  blur: False
+  brightness: False
+  random_crop: False
+seed: 3407
+data_folder: "./tensors_padded_updated"
+image_size: 256
